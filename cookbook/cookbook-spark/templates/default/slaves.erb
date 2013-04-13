@@ -3,4 +3,4 @@
 #
 # Local modifications will be overwritten.
 # 
-<%= @node['spark']['workers'].map {|x| x."\n"}  %>
+<%= @node['spark']['workers'].map {|x| x+"\n"}  %>
