@@ -6,9 +6,10 @@
 #
 # BSD-3 Clause
 #
-node[:scala][:version] = "2.9.3"
-node[:scala][:url] = "http://www.scala-lang.org/downloads/distrib/files/scala-2.9.3.tgz"
-node[:scala][:home] = node[:spark][:home]+"/scala"
+
+node.default[:scala][:version] = "2.9.3"
+node.default[:scala][:url] = "http://www.scala-lang.org/downloads/distrib/files/scala-2.9.3.tgz"
+node.default[:scala][:home] = node[:spark][:home]+"/scala"
 include_recipe "scala::default"
 
 git "{node[:spark][:home]}/spark/" do

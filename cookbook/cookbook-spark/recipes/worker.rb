@@ -1,5 +1,5 @@
-include_recipe "default"
+include_recipe "cookbook-spark::default"
 
-service spark_worker do
+service "spark_worker" do
   action :start
 end

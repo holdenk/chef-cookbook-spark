@@ -3,4 +3,4 @@ default[:spark][:git_revision] = "barnch-0.7"
 default[:spark][:user] = "holden"
 default[:spark][:group] = "holden"
 default[:spark][:home] = "/home/holden/sparkhome"
-
+default[:spark][:master_ip] = "10.0.2.15"
