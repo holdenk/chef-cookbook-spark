@@ -16,7 +16,7 @@ git "{node[:spark][:home]}/spark/" do
   repository node[:spark][:git_repository]
   reference node[:spark][:git_revision]
   action :sync
-  notifies :run, "bash[compile_app_name]"
+  notifies :run, "bash[build_spark]"
 end
 
 bash "build_spark" do
