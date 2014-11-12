@@ -29,6 +29,7 @@ SPARK_MASTER_WEBUI_PORT=<%= @node['spark']['master_webui_port'] %>
 # - SPARK_MEM, to change the amount of memory used per node (this should
 #   be in the same format as the JVM's -Xmx option, e.g. 300m or 1g)
 # - SPARK_CLASSPATH, to add elements to Spark's classpath
+SPARK_CLASSPATH=<%= @node['spark']['class_path'] %>
 # - SPARK_JAVA_OPTS, to add JVM options
 # - SPARK_LIBRARY_PATH, to add extra search paths for native libraries.
 
