@@ -33,4 +33,6 @@ SPARK_CLASSPATH=<%= @node['spark']['class_path'] %>
 # - SPARK_JAVA_OPTS, to add JVM options
 # - SPARK_LIBRARY_PATH, to add extra search paths for native libraries.
 
+# Directory to use for "scratch" space in Spark
+SPARK_LOCAL_DIRS=<%= @node['spark']['local_dirs'] %>
 
